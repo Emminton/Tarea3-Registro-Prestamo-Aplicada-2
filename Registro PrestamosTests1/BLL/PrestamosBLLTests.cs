@@ -17,7 +17,7 @@ namespace Registro_Prestamos.BLL.Tests
             prestamo.PretamoId= 0;
             prestamo.Fecha = DateTime.Now;
             prestamo.PersonaId = 1;
-            prestamo.Concepto = "Prestamo";
+            prestamo.Concepto = "Prestamo asdfghjklpoiuytrewqasdfcvbnmjkloiuytr ";
             prestamo.Monto = 2000;
             prestamo.Balance = 0;
             bool paso = PrestamosBLL.Guardar(prestamo);

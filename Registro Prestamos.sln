@@ -5,7 +5,9 @@ VisualStudioVersion = 16.0.30104.148
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registro Prestamos", "Registro Prestamos\Registro Prestamos.csproj", "{022B1D7B-47C2-4323-A013-6B210D48A477}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Registro PrestamosTests1", "Registro PrestamosTests1\Registro PrestamosTests1.csproj", "{47ECEBF5-AA0E-43EE-B877-84B8951A1D19}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Registro PrestamosTests1", "Registro PrestamosTests1\Registro PrestamosTests1.csproj", "{47ECEBF5-AA0E-43EE-B877-84B8951A1D19}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ApI", "ApI\ApI.csproj", "{46F71F4A-4505-4E84-9C4D-EB3D28024290}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -21,6 +23,10 @@ Global
 		{47ECEBF5-AA0E-43EE-B877-84B8951A1D19}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{47ECEBF5-AA0E-43EE-B877-84B8951A1D19}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{47ECEBF5-AA0E-43EE-B877-84B8951A1D19}.Release|Any CPU.Build.0 = Release|Any CPU
+		{46F71F4A-4505-4E84-9C4D-EB3D28024290}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{46F71F4A-4505-4E84-9C4D-EB3D28024290}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{46F71F4A-4505-4E84-9C4D-EB3D28024290}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{46F71F4A-4505-4E84-9C4D-EB3D28024290}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

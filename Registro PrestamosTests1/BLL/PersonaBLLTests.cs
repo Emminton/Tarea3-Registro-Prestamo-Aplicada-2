@@ -14,16 +14,18 @@ namespace Registro_Prestamos.BLL.Tests
         [TestMethod()]
         public void GuardarTest()
         {
-            Persona persona = new Persona() ;
-            persona.PersonaId = 0;
-            persona.Nombre = "jose";
-            persona.Cedula = "05612345639";
-            persona.Telefono = "8562364512";
-            persona.Direccion = "Calle trinitaria #45";
-            persona.FechaNacimiento = DateTime.Now;
-            persona.Balance = 0;
+            bool guardar = false;
+
+            Persona persona = new Persona(0,"jose manuel urena","05612345639", "8062364512", "Calle trinitaria #45",DateTime.Now,0) ;
+            //persona.PersonaId = 0;
+            //persona.Nombre = "jose manuel urena";
+            //persona.Cedula = "05612345639";
+            //persona.Telefono = "8562364512";
+            //persona.Direccion = "Calle trinitaria #45";
+            //persona.FechaNacimiento = DateTime.Now;
+            //persona.Balance = 0;
                 
-            bool guardar = PersonaBLL.Guardar(persona);
+             guardar = PersonaBLL.Guardar(persona);
             Assert.Equals(guardar,true);           
         }
 

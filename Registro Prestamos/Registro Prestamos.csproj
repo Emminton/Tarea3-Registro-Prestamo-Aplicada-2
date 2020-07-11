@@ -1,10 +1,20 @@
-<Project Sdk="Microsoft.NET.Sdk.Web">
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
 
   <PropertyGroup>
     <StarworkingDirectory>$(MSBuildProjectDirectory)</StarworkingDirectory>
     <TargetFramework>netcoreapp3.1</TargetFramework>
     <RootNamespace>Registro_Prestamos</RootNamespace>
   </PropertyGroup>
+
+  <ItemGroup>
+    <None Remove="Data\RegistroPrestamo.db" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="Data\RegistroPrestamo.db">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
 
   <ItemGroup>
     <PackageReference Include="Blazored.Toast" Version="3.1.2" />

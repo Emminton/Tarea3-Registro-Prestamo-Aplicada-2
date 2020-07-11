@@ -41,6 +41,17 @@ namespace Registro_Prestamos.Models
 
         public decimal Balance { get; set; }
 
+        public Persona(int personaId, string nombre, string cedula, string telefono, string direccion, DateTime fechaNacimiento, decimal balance)
+        {
+            PersonaId = personaId;
+            Nombre = nombre;
+            Cedula = cedula;
+            Telefono = telefono;
+            Direccion = direccion;
+            FechaNacimiento = fechaNacimiento;
+            Balance = balance;
+        }
+
         public Persona()
         {
             PersonaId = 0;

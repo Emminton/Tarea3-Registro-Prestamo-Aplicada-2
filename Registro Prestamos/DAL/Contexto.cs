@@ -14,20 +14,33 @@ namespace Registro_Prestamos.DAL
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
-            optionsBuilder.UseSqlite(@"Data Source=Data\RegistroPrestamo.db");
+            optionsBuilder.UseSqlite(@"Data Source=C:\sqlite\RegistroPrestamo.db");
         }
 
-        //protected override void OnModelCreating(ModelBuilder model)
-        //{
-        //    model.Entity<Persona>().HasData(new Persona
-        //    {
-        //        PersonaId = 1,
-        //        FechaNacimiento = DateTime.Now,
-        //        Nombre = "Roberto Carlos",
-        //        Telefono = "8293567829",
-        //        Direccion = "Rio de janeiro #1286",
-        //        Cedula = "0000024563"
-        //    });
-        //}
+        protected override void OnModelCreating(ModelBuilder model)
+        {
+            model.Entity<Persona>().HasData(new Persona
+            {
+                PersonaId = 1,
+                FechaNacimiento = DateTime.Now,
+                Nombre = "Roberto Carlos",
+                Telefono = "8293567829",
+                Direccion = "Rio de janeiro #1286",
+                Cedula = "0000024563"
+
+
+            });
+
+            model.Entity<Prestamo>().HasData(new Prestamo
+            {
+                PretamoId = 1,
+                PersonaId = 1,
+                Concepto = "Prestamos",
+                Fecha = DateTime.Now,
+                Monto = 0,
+                Balance = 0
+            });
+        }
+     
     }
 }

@@ -26,7 +26,7 @@ namespace Registro_Prestamos.BLL
 
             try
             {
-                //Agregar la persona que se desea insertar al contexto
+                
                 contexto.Personas.Add(persona);
                 paso = contexto.SaveChanges() > 0;
             }
